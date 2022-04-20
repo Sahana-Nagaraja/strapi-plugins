@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ct_parents",
+  "info": {
+    "singularName": "ct-parent",
+    "pluralName": "ct-parents",
+    "displayName": "CTParent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "ct_children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ct-child.ct-child",
+      "mappedBy": "child"
+    }
+  }
+}

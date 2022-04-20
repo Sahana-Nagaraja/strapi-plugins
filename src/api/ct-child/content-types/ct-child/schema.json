@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ct_children",
+  "info": {
+    "singularName": "ct-child",
+    "pluralName": "ct-children",
+    "displayName": "CTChild"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "childName": {
+      "type": "string"
+    },
+    "child": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ct-parent.ct-parent",
+      "inversedBy": "ct_children"
+    },
+    "page": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "ct_children"
+    }
+  }
+}

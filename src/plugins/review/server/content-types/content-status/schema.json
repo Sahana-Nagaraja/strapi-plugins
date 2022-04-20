@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "content-status",
+  "info": {
+    "singularName": "content-status",
+    "pluralName": "content-statuses",
+    "displayName": "content-status",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "content-manager": {
+      "visible": false
+    },
+    "content-type-builder": {
+      "visible": false
+    }
+  },
+  "attributes": {
+    "contentId": {
+      "type": "integer",
+      "required": true
+    },
+    "contentType": {
+      "type": "string"
+    },
+    "comments": {
+      "type": "richtext"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}
